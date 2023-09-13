@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='cs.css')}}">
+</head>
+
+<body>
+    <table border="6" >
+        <tr>
+            <th  colspan="2">
+                <img src="https://www.itvedant.com/images/footer-logo.png" alt="Company Logo" width="100">
+                <h5>REGISTATION FORM FOR I.T.VEDANT</h5>
+             </th>
+        </tr>
+        <form action="http://localhost:5000/" method="post">
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" name="Name" required><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-Mail</label></td>
+                <td><input type="email" name="mail"><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="message">Message</label></td>
+                <td><textarea id="message" name="message" cols="20" rows="2"></textarea><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <select name="gender" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="subscribe">Subscribe</label></td>
+                <td><input type="checkbox" name="Subscribe"><br><br></td>
+            </tr>
+			<tr>
+                <td><label for="photo">Upload Photo</label></td>
+                <td><input type="file" name="photo"><br><br></td>
+                
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"><br><br></td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
